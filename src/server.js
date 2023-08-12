@@ -1,3 +1,3 @@
-export const server = "https://shopping-app-api-rho.vercel.app/api/v2";
+export const server = "http://shopapi.niteshsingh.online/api/v2";
 
 
