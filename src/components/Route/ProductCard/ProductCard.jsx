@@ -95,7 +95,7 @@ const ProductCard = ({ data,isEvent }) => {
                ₹ {data.originalPrice ? data.originalPrice: null}
               </h4>
             </div>
-            <span className="font-[400] text-[17px] text-[#68d284]">
+            <span className="font-[400] text-[1 rem] text-[#68d284]">
               {data?.sold_out} sold
             </span>
           </div>
