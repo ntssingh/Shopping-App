@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 
 const ErrorPage = () => {
   return (
-  export default function Example() {
-  return (
     <>
       {/*
         This example requires updating your template:
@@ -30,10 +28,10 @@ const ErrorPage = () => {
       </main>
     </>
   )
-}
 
 
-  )
+
+  
 }
 
 export default ErrorPage
