@@ -20,6 +20,7 @@ import OrderDetailsPage from "../pages/OrderDetailsPage";
 import TrackOrderPage from "../pages/TrackOrderPage";
 import UserInbox from "../pages/UserInbox.jsx";
 import ErrorPage from "../pages/ErrorPage";
+import Demo from "../pages/Demo";
 export { 
     LoginPage,
     SignupPage,
@@ -43,4 +44,5 @@ export {
     TrackOrderPage,
     UserInbox,
     ErrorPage,
+    Demo,
 };
