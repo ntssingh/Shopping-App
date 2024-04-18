@@ -7,6 +7,7 @@ const Demo = () => {
     const [ldate, setLdate]= useState("");
     const [userdata, setUserdata]= useState("");
     const [toggle, setToggle] = useState(false);
+    const [comp, setComp]= useState("");
 
     
    
@@ -61,6 +62,7 @@ const Demo = () => {
     margin: '4em',
     padding: '1em'}}>
     <form  onSubmit={handlesubmit}>
+    
         <label style={{margin:'1em'}}>from</label>
         <input
          type="date"
@@ -76,12 +78,25 @@ const Demo = () => {
         <button type = 'submit' style={{margin:'1em', backgroundColor:'blue', color:'white', padding:'1em', borderRadius:'1em', border:'none', cursor:'pointer'}}>Search</button>
     </form>
     </div>
-
-  <h3 style={{margin:'4em'}}>Total cost of all company= {allusum}</h3>
+    <div style={{marginTop:'4em', marginLeft:'4em'}}>
+   <h3 >Total cost of all company= {allusum}</h3>
             <div >
+            <select onChange={(e) => setComp(e.target.value)}>
+        <option value="">filter company</option>
+        {Object.keys(userdata).map((item, index) => (
+          <option key={index} value={item}>
+            {item}
+          </option>
+        ))}
+      </select>
+      {comp && <p>You selected: {comp}</p>}
+
+      </div>
                
             {
-                Object.keys(userdata).map(name => (
+                Object.keys(userdata).filter((item )=>{
+                    return item.includes(comp)
+                }).map(name => (
                     
                     <div style={{boxShadow: '1px 2px 9px #F4AAB9',
                     margin: '4em',
