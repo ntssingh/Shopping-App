@@ -24,6 +24,7 @@ import {
   TrackOrderPage,
   UserInbox,
   ErrorPage,
+  Demo,
 } from "./routes/Routes.js";
 import {
   ShopDashboardPage,
@@ -98,6 +99,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/demo" element={<Demo />} />
         <Route path="/forgot-password" element={<ForgotPasswordPage />} />
         <Route path="/sign-up" element={<SignupPage />} />
         <Route path="*" element={<ErrorPage />} />
