@@ -1,3 +1,3 @@
-export const server = "https://shopapi.niteshsingh.online/api/v2";
+export const server = "https://shopapi.webroom.in/api/v2";
 
 
